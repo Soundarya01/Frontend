@@ -1,0 +1,60 @@
+<html>
+<head>
+<style>
+.head{
+color:00cc99;
+font-size: 40px;
+border-width: 5px;
+text-align: center;
+background:black;
+border:5px outset black;
+}
+.footer{
+  padding: 30px;
+  font-size: 20px;
+color: white;
+  text-align: center;
+  background:black;
+  border:5px outset black;
+}
+body{
+background:pink;
+}
+</style>
+</head>
+<body>
+<div class="head">
+<img src="conflogo.png" alt="image" >
+<h3>Welcome to Art World Conference</h3>
+</div>
+<h1 style="text-align:center;border:solid black;">Register for Art Conference</h2>
+<form method="POST">
+  <label for="fname">Name:</label><br>
+  <input type="text" id="fname" name="fname" required><br><br>
+  <label for="age">Age:</label><br>
+  <input type="number" id="age" name="age" min="10" max="25" required><br>
+  <p>Gender:</p>
+  <input type="radio" id="male" name="Gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="Gender" value="female">
+  <label for="female">Female</label><br><br>
+  <label for="dob">DOB:</label>
+  <input type="date" id="dob" name="dob"><br><br>
+  <label for="mail">Email:</label><br>
+  <input type="text" id="mail" name="mail" required><br><br>
+  <label for="course">Select Preffered Course:</label>
+  <select id="course" name="course">
+  <option value="art">Art</option>
+  <option value="des">Designers</option>
+  <option value="cul">Cultural producers</option>
+  <option value="all">All three</option>
+  </select><br><br>
+  <button type="submit" onclick="alert('Submitted Successfully!Check your Email for further details.')">SUBMIT</button>
+</form> 
+<div class="footer"><p>For general questions, contact:artworld@yahoo.com</p>
+<a href ="https://www.whatsapp.com/"  target="watsapp"><img src ="WhatsApp.png" alt="Whatsapp" width="40" height="40"> </a>
+<a href ="mailto:artworld@yahoo.com"  target="watsapp"><img src = "mail.png" alt="Email" width="40" height="40"> </a>
+<a href ="https://twitter.com/?lang=en"  target="watsapp"><img src = "twitter.jpg" alt="Twitter" width="40" height="40"></a>
+</div> 
+</body>
+</html>
